@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ajax Rechner</title>
+    <!--
+Erstelle einen Rechner mit 4 Grundrechenarten plus modulo, der die Berechnung
+in einer php-Datei ausführt. Die Verbindung soll per ajax mit Methode post
+umgesetzt werden.
+-->
+    <script defer src="js/ajaxRequest.js"></script>
+</head>
+<body>
+<table>
+    <tr>
+        <td>
+            <input type="number" id="firstValue">
+        </td>
+        <td>
+            <select id="ops">
+                <option value="add">+</option>
+                <option value="subtract">-</option>
+                <option value="multiply">*</option>
+                <option value="divide">/</option>
+                <option value="modulo">mod</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="number" id="secondValue">
+        </td>
+        <td>
+            <button onclick="calculate()">Calculate</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+        -------------------------------
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="number" id="result" name="result" readonly>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
