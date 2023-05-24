@@ -1,12 +1,15 @@
 <?php
+
+// retrieve the input values
 $val1 = $_POST['val1'];
 $val2 = $_POST['val2'];
 $op = $_POST['op'];
 
-echo '<pre>';
-print_r($_POST);
-echo '</pre>';
+//echo '<pre>';
+//print_r($_POST);
+//echo '</pre>';
 
+// perform the calculation based on the operator
 switch ($op) {
     case 'add':
        $result = $val1 + $val2;
@@ -27,6 +30,7 @@ switch ($op) {
         $result = '';
         break;
 }
-if (isset($result)) echo $result;
 
-if (isset($val1)) echo 'val1 is set';
+//if (isset($result)) echo $result;
+// return the result
+echo $result;
